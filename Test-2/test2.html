@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST2</title>
+    <link rel="stylesheet" href="test2.css">
+</head>
+<body>
+    <div id="data">
+        <h1>NARUTO SHIPPUDEN</h1>
+        <h2>Characters</h2>
+        <p>Naruto Uzumaki</p>
+        <p>Sasuke Uchiha</p>
+        <p>Minato Namikaze</p>
+        <p>Itachi Uchiha</p>
+        <p>Kakashi Hatake</p>
+        <p>Hinata Hyuga</p>
+        <p>Shikamaru Nara</p>
+        <p>Madara Uchiha</p>
+        <p>Obito Uchiha</p>
+        <p>Harshirama Senju</p>
+        <p>Tobirama Senju</p>
+        <p>Jiraya</p>
+    </div>
+    <button id="hello" onclick="myfunction()">&lt;&lt;</button>
+    <script>
+        // function myfunction() {
+        //     let mybutton = document.getElementById("hello")
+        //     if (mybutton.innerHTML === "&lt;&lt;" )
+        //     {
+        //         mybutton.innerHTML = "&gt;&gt;";
+        //         document.getElementById("hello").style.left = "5px";  
+        //         document.getElementById("data").style.width="5px";
+        //     }else
+        //     {
+        //         mybutton.innerHTML = "&lt;&lt;";
+        //         document.getElementById("hello").style.left = "227px";  
+        //         document.getElementById("data").style.width="227px";
+        //     }
+        // }
+            function myfunction(){  
+                 document.getElementById("hello").innerHTML === "&lt;&lt;" ? 
+                (    (document.getElementById("hello").innerHTML = "&gt;&gt;"),
+                    (document.getElementById("hello").style.left = "5px"),
+                    (document.getElementById("data").style.width="5px")
+                )
+                : 
+                (   (document.getElementById("hello").innerHTML = "&lt;&lt;"),
+                    (document.getElementById("hello").style.left = "227px"),
+                    (document.getElementById("data").style.width="235px")
+                )
+            }
+    </script>
+</body>
+</html>

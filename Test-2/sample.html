@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Bar</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background-color:blue;width:30%;height:100vh;display: flex;
+    justify-content:space-between;align-items:center">
+        <div class="sidebar"
+            style="color:aliceblue;font-size:1.8rem;font-weight:900;font-family:'Times New Roman', Times, serif">This is
+            a sidebar</div>
+        <button id="toggleButton" type="button" style="width:fit-content;position:relative;left:0.5rem;"
+            onclick="toggleButtonText()">
+            << </button>
+    </div>
+    <div class="container">
+        <div class="sidebar"></div>
+        <button type="button"></button>
+    </div>
+    <script>
+        let toggleButtonText = () => {
+            let button = document.querySelector('#toggleButton');
+            let container = document.querySelector('.container');
+            let sidebar = document.querySelector('.sidebar');
+            if (button.textContent === '<<') {
+                container.style.marginLeft = '-28%';
+                button.textContent = '>>'
+            } else {
+                container.style.marginLeft = '0';
+                button.textContent = '<<';
+            }
+        }
+    </script>
+</body>
+
+</html>
