@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assign.css" />
+    <title>Document</title>
+  </head>
+</head>
+<body>
+<div class="container">
+<label for="assignees">ASSIGNEES</label>
+<div class="dropdown">
+    <select id="assignees">
+        <option value="unassigned">unassigned</option>
+        <option value="javeed">javeed</option>
+        <option value="Nawaz">Nawaz</option>
+        <option value="Moses">Moses</option>
+        <option value="itachi">itachi</option>
+    </select>
+    <button class="clear-button" onclick="clearSelection()">✖️</button>
+</div>
+</div>
+  </body>
+  <script>
+    function clearSelection() {
+  document.getElementById("assignees").value = "unassigned";
+}
+  </script>
+</html>
